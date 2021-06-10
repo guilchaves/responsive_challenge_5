@@ -2,21 +2,38 @@
 @import url('./_variables.css');
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: var(--montserrat);
   font-size: 16px;
-  background-color: var(--coal);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--grey-1);
 }
 
-.active {
-  font-weight: 700;
-  border-bottom: 0.125rem solid var(--white);
+.app {
+  display: grid;
+  grid-template-areas: 'user' 'content' 'footer';
+  grid-template-columns: auto;
+  grid-template-rows: 35vh 55vh auto;
 }
 
-@media (min-width: 1024px) {
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.user {
+  grid-area: user;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .app {
+    grid-template-rows: 40vh 100vh auto;
   }
 }

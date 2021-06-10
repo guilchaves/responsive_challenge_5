@@ -4,33 +4,14 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
-/**
-*font-family: 'Crimson Pro', serif;
-*
-*/
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
-
-/**
-*font-family: 'Lora', serif;
-*
-*/
-@import url('https://fonts.googleapis.com/css2?family=Lora');
-
-/**
-*Fonts: 
-* Crimson Pro / 200
-* Lora / 700
-* Montserrat / 700, 500, 400, 
-*
-*/
-
 :root {
-  --lora: 'Lora', serif;
-  --crimson-pro: 'Crimson Pro', serif;
   --montserrat: 'Montserrat', sans-serif;
 
-  --grey: #a9a9a9;
-  --coal: #181719;
+  --grey-1: #4e5150;
+  --grey-2: #a9a9a9;
+  --grey-3: #bdbdbd;
+  --grey-4: #e5e5e5;
+  --grey-foot: #b9bdcf;
   --white: #ffffff;
 
   --mg-left-right: 0.75rem;
